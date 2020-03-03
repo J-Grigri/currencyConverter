@@ -4,9 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency converter</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    
-    <script src="js/scripts.js"/>
+    <h1>Currency converter</h1>
+    <div class="container">
+        <div>
+            <h2>Amount</h2>
+            <input type="number" id="amount">
+        </div>
+    <div id="From" class="inputCurrency">
+        <h2>From:</h2>
+            <div>
+                <input type="radio" id="VND" name="currency" 
+                value="VND">
+                 <label>VND</label>
+            </div>
+            <div>
+                <input type="radio" id="USD" name="currency"
+                value="USD" >
+                <label>USD</label>
+            </div> <div>
+                <input type="radio" id="EUR" name="currency"
+                value="EUR" >
+                <label>EUR</label>
+            </div>
+            <div>
+                <input type="radio" id="KRW" name="currency"
+                value="KRW" >
+                <label>KRW</label>
+            </div>
+
+    </div>
+    <div id="To:" class="outputCurrency">
+        <h2>To</h2>
+            <div>
+                <input type="radio" id="VND" name="currency1" 
+                value="VND">
+                 <label>VND</label>
+            </div>
+            <div>
+                <input type="radio" id="USD" name="currency1"
+                value="USD" >
+                <label>USD</label>
+            </div>
+            <div>
+                <input type="radio" id="EUR" name="currency1"
+                value="EUR" >
+                <label>EUR</label>
+            </div>
+            <div>
+                <input type="radio" id="KRW" name="currency1"
+                value="KRW" >
+                <label>KRW</label>
+            </div>
+
+    </div>
+    <button id="convertButton" onclick="convert()" >Convert</button>
+    <span id="result"></span>
+    </div>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
